@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Blog User Interface</title>
+		<link rel="stylesheet" href="Styles/Blogger.css">
+	</head>
+	<body>
+		<form id="input-post">
+		<div class = "blog"> Blog posts:
+			<textarea id= "blogposts" placeholder="Type your Post here"></textarea>
+			<select id= "categories">
+			 <option value="Sport">Sport</option>
+			  <option value="Games">Games</option>
+			  <option value="Countries">Countries</option>
+			</select>
+			<button id = "send" onclick="submitMessage(); return false;">Send</button>
+		</div>
+	</form>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="Scripts/Blogger.js"></script>
+	<!--the next lines should add the ability to format input from the textarea-->
+	<!--<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+	<script>
+	        tinymce.init({
+	            selector: "textarea",
+	            plugins: [
+	                "advlist autolink lists link image charmap print preview anchor",
+	                "searchreplace visualblocks code fullscreen",
+	                "insertdatetime media table contextmenu paste"
+	            ],
+	            toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
+	            height: "380",
+			    resize: false
+			});
+	</script>-->
+
+	</body>
+
+</html>
