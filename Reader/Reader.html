@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Reader User Interface</title>
+		<link rel="stylesheet" href="Styles/Reader.css">
+
+	</head>
+	<body>
+		<div>
+
+		<div class="navbar">
+			
+			<div class="nav-element">
+				<p>My Blog</p>
+			</div>
+
+		</div>
+		</div>
+
+			<section id="categories-content">
+				<h3>Categories</h3>
+
+				<div class="category-element">
+					<select id="categories">
+					  <option value="Sport">Sport</option>
+					  <option value="Games">Games</option>
+					  <option value="Countries">Countries</option>
+					</select>
+					<button id = "send" onclick="getBlogpost(); return false;">Send</button>
+				</div>
+			</section>
+		</div>
+
+		<div id="blogpost">
+		</div>
+
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="Scripts/reader.js"></script>
+	</body>
+</html>
