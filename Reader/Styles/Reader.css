@@ -81,3 +81,7 @@ body {
 .new-post {
     border-top: 1px solid #00008B;
 }
+
+.new-comment {
+    border-top: 1px solid #800000;
+}

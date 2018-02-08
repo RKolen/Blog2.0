@@ -17,12 +17,15 @@
 
 		$connection = mysqli_connect($host, $user, $pass, $db);
 
-		$sql = "SELECT * FROM blogposts";
+		$sql = "SELECT blogposts.id, category.Name, blogposts.blogposts 
+				FROM category 
+				INNER JOIN category_blogposts ON category.id = category_blogposts.Category_id 
+				INNER JOIN blogposts ON category_blogposts.blogpost_id = blogposts.id";
 		$result = $connection->query($sql);
 		$answer = array();
 
 		foreach ($result as $row) {
-			$answer[] = array($row['id'], $row['blogposts']);
+			$answer[] = array($row['id'], $row['Name'], $row['blogposts']);
 		}
 		
 		$json_answer = json_encode($answer);
