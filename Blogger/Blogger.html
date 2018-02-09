@@ -5,19 +5,43 @@
 		<link rel="stylesheet" href="Styles/Blogger.css">
 	</head>
 	<body>
+
+		<div id="btnGrp" align="center">
+			<div id="btnBlogInput" onclick="loadBlogForm()">write blogpost</div>
+			<div id="btnShowBlog" onclick="getBlog()">show blogposts</div>
+		</div>
+
 		<form id="input-post">
 		<div class = "blog"> Blog posts:
 			<textarea id= "blogposts" placeholder="Type your Post here"></textarea>
-			<select id= "categories" multiple>
+			<select id= "categories" multiple name="categories[]">
 			 <option value="Sport">Sport</option>
 			  <option value="Games">Games</option>
 			  <option value="Countries">Countries</option>
 			</select>
 			<button id = "send" onclick="submitMessage(); return false;">Send</button>
+			<div>Shortcuts
+				<p> "ccg" : "Collectible Card Game",<br>
+				    "nfl" : "National Football League",<br>
+				    "nl"  : "Nederland",<br>
+				    "cg"  : "CodeGorilla",<br>
+				    "gn"  : "Groningen",<br>
+				    "swe" : "Zweden",<br>
+				    "uk"  : "Verenigd Koninkrijk",<br>
+				    "bg"  : "Board Game", <br>
+				    "rpg" : "roleplaying Game", <br>
+				    "ed"  : "Eredivisie", <br>
+				    "pl"  : "Premier League"</p>
+			</div>
 		</div>
 	</form>
+
+	<div id="blogpost" display ="none">
+	</div>
+
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="Scripts/Blogger.js"></script>
+	<script src="Scripts/blogger.js"></script>
 	<!--the next lines should add the ability to format input from the textarea-->
 	<!--<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
 	<script>
