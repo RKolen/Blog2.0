@@ -15,6 +15,23 @@ if ($verb == "POST") {
 				http_response_code(400);
 		}
 
+/*if ($verb == "POST") {
+			//identify the category and blogpost to add an id
+	if(!empty($_POST['categories'])) {
+
+		foreach ($_POST['categories'] as $select) {
+
+			if (isset($_GET['categories']) and isset($_GET['blogposts'])) {
+				sendBlogpostsToDB($_GET['categories'], ($_GET['blogposts']));
+				http_response_code(200);
+			}
+
+			} else {
+				http_response_code(400);
+		}
+	}
+}*/
+
 	function sendBlogpostsToDB ($category, $blogposts) {
 	global $dsn;
 	global $user_name;

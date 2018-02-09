@@ -1,5 +1,6 @@
 /*
 blue #00008B
+red #800000
 */
 body {
 	font-size: 20px;
@@ -36,4 +37,48 @@ body, textarea {
 
 #send {
 	font-size: 20px;
+}
+
+#btnBlogInput, #btnShowBlog {
+	text-align: center;
+	background-color: #800000;
+	padding: 5px;
+	width: 130px;
+	display: inline-block;
+	cursor: pointer;
+	
+	font-size: 80%;
+	color: white;
+	margin-bottom: 30px;
+}
+#blogpost {
+    width: 1178px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #00008B;
+    padding: 10px;
+    border: 1px solid #00008B;
+    margin-left: 197px;
+    width: 981px;
+    display: none;
+    color: black;
+    font-size: 14px;
+    background-color: white;
+}
+
+.new-post {
+    border-top: 1px solid #00008B;
+}
+
+.new-comment {
+    border-top: 1px solid #800000;
+}
+#shortcuts {
+	width: 100%;
+	font-size: 10px;
+	padding: 10px;
+	word-wrap: break-word;
+	margin-left: 10px:
+	min-height: 300px;
+	outline: : none;
 }
