@@ -1,9 +1,9 @@
 # Blog2.0
 Link to Trelloboard https://trello.com/b/D7t44LZe
 
-Blogger: http://wijzijncodegorilla.nl/raymond/blog2.0/Blogger.html
+Blogger: http://www.codechamps.nl/raymond/blog2.0/Blogger.html
 
-Blog Reader: http://wijzijncodegorilla.nl/raymond/blog2.0/Reader.html
+Blog Reader: http://www.codechamps.nl/raymond/blog2.0/Reader.html
 
 API: https://app.swaggerhub.com/apis/rkolen/Blog2.0_API/2.0.0
 
